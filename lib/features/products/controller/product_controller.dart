@@ -33,9 +33,10 @@ class ProductsController extends GetxController {
 
       isLoaded.value = true;
     } catch (e) {
-      errorText.value = 'Failed to get products. Try again later';
+      errorText.value = 'Failed to get products. Try again ';
 
-      Get.snackbar('Cannot get products', 'Please check your connection');
+      Get.snackbar(
+          'Cannot get products', 'Please check your internet connection');
     }
   }
 }
