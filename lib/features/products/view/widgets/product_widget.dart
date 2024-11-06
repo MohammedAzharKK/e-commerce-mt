@@ -21,6 +21,7 @@ class ProductWidget extends StatelessWidget {
           }
 
           if (controller.isLoaded.value) {
+            // ignore: invalid_use_of_protected_member
             final products = controller.products.value;
 
             return ListView.builder(
